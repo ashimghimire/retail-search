@@ -3,6 +3,7 @@
 import { loginWithPassword,loginWithGoogle } from '@/app/actions/auth'
 import { useRouter } from 'next/navigation';
 import {  useState } from 'react';
+import Link from 'next/link';
 export function SignupForm() {
     const[email,setEmail]=useState('');
     const[password,setPassWord]=useState('');
@@ -34,11 +35,11 @@ export function SignupForm() {
     return (
       <div className="wrapper bg-slate-300">
         <head>
-                <link
+                 <Link
                     href="https://fonts.googleapis.com/icon?family=Material+Icons"
                     rel="stylesheet"
                 />
-                <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet"/>
+                <Link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet"/>
             </head> 
         <div className="flex flex-row w-full h-full">
             <div className="flex flex-col basis-3/4 p-4">
